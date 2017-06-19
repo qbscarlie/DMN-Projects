@@ -1,0 +1,147 @@
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'mixins';
+@import 'variables';
+@import 'base';
+
+html {
+  // Applied when embedded using Pym.js
+  font-size: 10px;
+}
+
+body {
+  // This helps Pym.js more more accurately measure our <body>
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+}
+
+
+//here we go
+
+#wrapper {
+  width: 100%;
+}
+
+#dn__navbar {
+  width: 60px;
+  float: left;
+  font-size: 1rem;
+  //display: inline-block;
+  @media (max-width: 450px) {
+    width: 40px;
+  }
+}
+
+#dn__content {
+  width: calc(100% - 80px);
+  float:right;
+  position: relative;
+  @media (max-width: 450px) {
+    width: calc(100% - 55px);
+  }
+}
+
+
+#embed-content li {
+  background-color: $dmnblue;
+  color: #fff;
+  text-align: center;
+  border-bottom: 3px solid darken($dmnblue, 5%);
+  @media screen and (max-width: 350px) {
+    width: 40px;
+    font-size: 12px;
+  }
+  font-size: 14px;
+  height: 40px;
+  width: 60px;
+  line-height: 40px;
+  cursor: pointer;
+  &:last-of-type {
+    border-bottom: none;
+  }
+  &:hover {
+    background-color: darken($dmnblue, 5%);
+  }
+  &.dn--active {
+    background-color: darken($dmnblue, 10%);
+    position: relative;
+    &:after {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: darken($dmnblue, 10%);
+      display: block;
+      content: '';
+      transform: rotate(45deg);
+      right: -5px;
+      top: 50%;
+      margin-top: -5px;
+    }
+  }
+  @media (max-width: 450px) {
+    width: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+h3 {
+  margin: 1.2rem 0 0 0;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  display: inline-block;
+  @media screen and (max-width: 450px){
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+}
+
+h3 a, a:visited {
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
+.chaptercard {
+  display: none;
+  img {
+    width: 100%;
+    margin-bottom: .3rem;
+  }
+  &.viewable {
+    display: block;
+  }
+}
+
+.boxcontent p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.boxcontent .quote {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-family: $sans;
+  font-style: italic;
+  margin: 0;
+  padding: 1.2rem 0 0 0;
+  border-top: 3px solid $black215;
+}
+
+.boxcontent .attribution {
+  font-size: 1.4rem;
+  font-style: normal;
+  display: block;
+  text-align: right;
+  line-height: 2.1rem;
+}
+
+.boxcontent .cutline {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-top: 0;
+}

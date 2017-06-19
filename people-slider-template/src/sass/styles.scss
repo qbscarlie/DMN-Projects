@@ -1,0 +1,117 @@
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'mixins';
+@import 'variables';
+@import 'base';
+
+html {
+  // Applied when embedded using Pym.js
+  font-size: 10px;
+}
+
+body {
+  // This helps Pym.js more more accurately measure our <body>
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+}
+
+#wrapper {
+  width: 100%;
+}
+
+#embed-content {
+  position:relative;
+}
+
+#ps__nav ul {
+  list-style-type: none;
+  position: absolute;
+  bottom:5px;
+  left: 50%;
+  padding: 0;
+}
+
+#embed-content li {
+  color: grey;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: $black121;
+  border-radius: 50%;
+  margin: 0 2px 5px 0;
+  &:last-of-type {
+    margin: 0 0 5px 0;
+  }
+  cursor: pointer;
+  &:hover {
+    background-color: $dmnblue;
+  }
+  &.ps--active {
+    background-color: $dmnblue;
+  }
+}
+
+// moved padding to the cardcontent container itself. this way you're not having to
+// position elements within the cardcontent container (img, cutlines, etc) with padding
+
+.cardcontent {
+  display: none;
+  padding: 0 5% 40px 5%;
+img {
+  width: 100%;
+}
+&.viewable {
+  display: block; }
+h3 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 0;
+  word-break: break-all;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+p {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .cutline {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  &:focus {
+    outline:none; }
+  cursor: pointer;
+  img {
+  height: 60px;
+  width: 60px; }
+}
+
+.next, .prev {
+  position: absolute;
+  top: 300px;
+  @media screen and (max-width: 450px){
+    top:400px; } }
+
+.next {
+  right: 0px;
+  @media screen and (max-width: 450px){
+    right: -12px; }
+}
+
+.prev {
+  left: 0px;
+  @media screen and (max-width: 450px) {
+    left: -12px; }
+}
