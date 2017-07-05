@@ -1,6 +1,6 @@
 # people-slider
 
-View the example at http://interactives.dallasnews.com/embeds/2017/people-slider/
+View the example at http://interactives.dallasnews.com/embeds/2017/slider-template/
 
 ## Usage
 To make a people slider, create a Google sheet with columns for name, id (start at 0 and increment), description, and img. (You can also include cutline if you really want to.) Then activate it using https://github.com/DallasMorningNews/GS3.
