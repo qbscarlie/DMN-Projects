@@ -21,4 +21,9 @@ I used Handlebars along with the script to connect a Google sheet to an S3 bucke
 ## people-slider-template
 This was a template I made so that it would be easy for others on the Interactives team to make embeddable sliders for stories to introduce people/places/etc. in a story. This uses the same mechanics as the divine nine embeddable to retrieve data from a Google sheet.
 
-[template example](http://interactives.dallasnews.com/embeds/2017/people-slider/)
+[template example](http://interactives.dallasnews.com/embeds/2017/slider-template/)
+
+## book-slider
+This was an embeddable I made for a story on summer reading books that North Texas schools were assigning. I used a jQuery plugin to make a series of image sliders where the top image was a synopsis of the book and the image underneath revealed the book cover, title and author. 
+
+[story link](https://www.dallasnews.com/news/education/2017/07/11/high-school-flashback-can-name-summers-reading-assignments-just-books-plots)
