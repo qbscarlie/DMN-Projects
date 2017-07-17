@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://interactives.dallasnews.com/common/templates/v1.0/js/jquery.swipe.min.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="https://cloud.typography.com/6922714/7642152/css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+  <script id="people-slider-template" type="text/x-handlebars-template">
+      <div class="cardcontent clearfix" id="card-{{id}}">
+        <img src="images/{{img}}"/>
+        <p class="cutline">
+        {{cutline}}
+        </p>
+        <h3>{{name}}</h3>
+        <p>
+          {{description}}
+        </p>
+      </div>
+    </script>
+    <script id="people-slider-nav" type="text/x-handlebars-template">
+      <li class="ps__nav-el" id="ps__nav-el-{{id}}" data-target="{{id}}"></li>
+    </script>
+  </head>
+  <body>
+
+    <div id="embed-content">
+      <div class="chatter">
+        <h4>People slider template</h4>
+        <p>A template of a slider to learn about people & stuff</p>
+      </div>
+      <div id="wrapper" class="clearfix">
+        <div id="ps__content"></div>
+        <button class="prev" id="{{id}}">
+          <img src="images/buttonLeft.svg" />
+        </button>
+        <button class="next" id="{{id}}">
+          <img src="images/buttonRight.svg" />
+        </button>        <div id="ps__nav"><ul></ul></div>
+      </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <!-- <script src="https://interactives.dallasnews.com/common/scripts/embed-tracker/embed-tracker.min.js"></script> -->
+  </body>
+</html>

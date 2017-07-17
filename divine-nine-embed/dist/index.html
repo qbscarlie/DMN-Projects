@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="stylesheet" href="https://cloud.typography.com/6922714/7642152/css/fonts.css">
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+    <script id="divine-nine-template" type="text/x-handlebars-template">
+        <div class="chaptercard" id="chapter-{{id}}">
+          <div class="boxcontent clearfix" id="{{id}}">
+            <img src="images/{{img}}" alt="{{cutline}}" />
+            <p class="cutline">
+              {{cutline}} ({{credit}})
+            </p>
+            <h3 id="heading-{{id}}">{{chapter}}</h3>
+            <p>
+              <b>Founded:</b> {{established}}<br />
+              <b>First chartered in Dallas:</b> {{chartered}}<br />
+              <b>Colors:</b> {{colors}}<br />
+              <b>Unique associations:</b> {{symbols}}<br />
+              <a href="{{website}}" target="_blank">View website</a>
+            </p>
+            <blockquote class="quote">
+              {{quote}} <span class="attribution">— {{atttrib}}</span>
+            </blockquote>
+          </div>
+        </div>
+    </script>
+
+    <script id="divine-nine-nav" type="text/x-handlebars-template">
+        <li class='dn__nav-el clearfix' id="dn__nav-el-{{id}}" data-target="{{id}}">{{letters}}</li>
+    </script>
+  </head>
+  <body>
+    <div id="embed-content">
+      <div class="chatter">
+        <h4>The Divine Nine in Dallas-Fort Worth</h4>
+        <p>Explore each organization's letters to find out more about each chapter's local history.</p>
+      </div>
+
+      <div id="wrapper" class="clearfix">
+        <div id="dn__navbar">
+          <ul></ul>
+        </div>
+        <div id="dn__content"></div>
+      </div>
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <!-- <script src="https://interactives.dallasnews.com/common/scripts/embed-tracker/embed-tracker.min.js"></script> -->
+  </body>
+</html>

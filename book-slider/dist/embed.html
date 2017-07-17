@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+    .embed-preview {
+      margin: 30px auto 0;
+      border: 3px dashed red;
+    }
+
+    .embed-preview-desktop {
+      max-width: 600px;
+    }
+    .embed-preview-mobile {
+      max-width: 300px;
+    }
+    </style>
+  </head>
+  <body>
+    <script src="//pym.nprapps.org/pym.v1.min.js"></script>
+
+    <div id="preview_book-slider-desktop" class="embed-preview embed-preview-desktop"></div>
+    <script>new pym.Parent('preview_book-slider-desktop', 'index.html', {})</script>
+
+  </body>
+</html>
