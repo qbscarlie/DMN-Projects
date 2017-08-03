@@ -11,6 +11,10 @@ These are all maps I made using Mapbox and a script that connects Google Sheets 
 
 [waterparks-map](https://www.guidelive.com/take-the-kids/2016/05/24/find-best-water-parks-free-splash-pads-dallas-fort-worth): A map showing waterparks around the DFW area, their contact info, and what they offer.
 
+[skyline-map](http://interactives.dallasnews.com/embeds/2017/skyline-map/): A step through map of skyscrapers in Dallas over the decades.
+
+[coffee-map](http://interactives.dallasnews.com/embeds/2017/coffee-map/): A map showing coffee shops around the DFW area, their contact info, and what their hours are.
+
 ## divine-nine-embed
 This was a component of a feature story about the divine nine Greek chapters in Dallas and their history. I made this embeddable to show basic facts about all nine chapters, along with a picture and quote from each one.
 
@@ -24,6 +28,11 @@ This was a template I made so that it would be easy for others on the Interactiv
 [template example](http://interactives.dallasnews.com/embeds/2017/slider-template/)
 
 ## book-slider
-This was an embeddable I made for a story on summer reading books that North Texas schools were assigning. I used a jQuery plugin to make a series of image sliders where the top image was a synopsis of the book and the image underneath revealed the book cover, title and author. 
+This was an embeddable I made for a story on summer reading books that North Texas schools were assigning. I used a jQuery plugin to make a series of image sliders where the top image was a synopsis of the book and the image underneath revealed the book cover, title and author.
 
 [story link](https://www.dallasnews.com/news/education/2017/07/11/high-school-flashback-can-name-summers-reading-assignments-just-books-plots)
+
+## hazing-dashboard
+This was an embeddable I made to showcase results from a survey given to high school sports coaches in the area about hazing. I wrote a lil Python to parse the survey results then built a dynamic bar chart in D3 that's controlled by two drop down menus (and then I filter through the data using lodash.)
+
+[embed link](http://interactives.dallasnews.com/embeds/2017/hazing-dashboard/)

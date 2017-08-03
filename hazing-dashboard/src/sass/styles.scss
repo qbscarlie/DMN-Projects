@@ -1,0 +1,73 @@
+@import '../../node_modules/normalize.css/normalize';
+
+@import 'mixins';
+@import 'variables';
+@import 'base';
+
+html.embedded, html {
+  // Applied when embedded using Pym.js
+  font-size: 10px;
+}
+
+body {
+  // This helps Pym.js more more accurately measure our <body>
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+}
+
+
+#chart {
+  margin-top: 12px;
+}
+
+select {
+  font-family: $sans;
+  font-size: 1.1rem;
+}
+
+#questions {
+  width: 100%;
+}
+option {
+  font-family: $sans;
+}
+
+.bar {
+  fill: $chartRed;
+}
+
+.tick text {
+  font-family: $sans;
+}
+
+.tick line {
+  visibility: hidden;
+}
+
+.domain{
+  stroke: #fff;
+}
+
+.keyText {
+  font-size: 1.2rem;
+}
+
+.valText {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.directions {
+  font-size: 1.2rem;
+  display:inline;
+  font-weight: bold;
+}
+
+.source {
+  float: right;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}

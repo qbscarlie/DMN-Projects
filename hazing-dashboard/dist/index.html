@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="https://cloud.typography.com/6922714/7642152/css/fonts.css">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Coaches weigh in on hazing</title>
+  </head>
+  <body>
+    <!-- Your markup goes here -->
+
+    <div id="embed-content">
+      <div class="chatter">
+        <h4>Coaches weigh in on hazing</h4>
+        <p><i>The Dallas Morning News</i> this summer surveyed area high school coaches anonymously, asking them about their experiences with hazing and bullying in athletics. There were 139 responses from across the area to the optional survey, which included multiple-choice and short-answer questions.</p>
+      </div>
+      <p class = "directions">
+        Pick a question:
+      </p><br /><br />
+      <select id="questions">
+        <!-- <option value="0">How long have you been a high school coach?</option> -->
+        <option value="1">Have you ever witnessed or heard about hazing at a high school you have worked at?</option>
+        <option value="2">Have you ever seen hazing turn into something worse, like bullying or abuse?</option>
+        <option value="3">In what sports have you seen or heard about hazing occurring? (Please check all that apply)</option>
+        <option value="4">Were you ever involved in hazing or bullying as an athlete? Were you ever hazed or bullied?</option>
+      </select><br /><br />
+
+      <p class="directions">
+        Filter by years coaching:
+      </p>
+      <select id="experience">
+        <option value="1">All</option>
+        <option value="2">1-5 years</option>
+        <option value="3">6-10 years</option>
+        <option value="4">11-20 years</option>
+        <option value="5">21-30 years</option>
+        <option value="6">More than 30 years</option>
+      </select>
+
+      <div id="chart"></div>
+      <p class="source">
+        Source: The Dallas Morning News
+      </p><br />
+
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!-- <script src="https://interactives.dallasnews.com/common/scripts/embed-tracker/embed-tracker.min.js"></script> -->
+  </body>
+</html>

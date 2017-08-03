@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="https://cloud.typography.com/6922714/7642152/css/fonts.css">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Skyline map</title>
+  </head>
+  <body>
+    <!-- Your markup goes here -->
+
+    <div id="embed-content">
+      <div class="chatter">
+        <h4>The rise of downtown Dallas skyscrapers over the decades</h4>
+        <p>During the 1980s, Dallas’ skyline grew by nine major skyscrapers – the most ever. Since then, the race to build tall buildings has slowed to a crawl. Only one downtown tower taller than 40 floors has been built since the 1980s. Another one with 45 floors is on the way. Here are the downtown towers with 40 stories or more built since the 1960s.</p><p>
+        Click/touch the locations to view more information about each building</p>
+      </div>
+      <ul class = "legend">
+        <li id="d1960s">1960s</li>
+        <li id="d1970s">1970s</li>
+        <li id="d1980s">1980s</li>
+        <li id="d2010s">2010s</li>
+      </ul>
+      <br />
+      <div id="map"></div>
+      <p class="credit">
+          DMN Staff
+      </p>
+
+    <ul id="captions">
+      <li value="1960"><p><b>1960s: </b>The decade that introduced Dallas to true skyscrapers launched two the same year, with both reaching at least 50 stories.</p></li>
+      <li value="1970" class="hidden"><p><b>1970s: </b>Reflecting on the next decade of downtown Dallas growth, two mirrored skyscrapers hit the skyline, including one that added two lighted X's to the night sky.</p></li>
+      <li value="1980" class="hidden"><p><b>1980s: </b>The decade that put the Dallas TV show on the map was a boom time for tall buildings with nine new towers.</p></li>
+      <li value="1990s-2000s" class="hidden"><p><b>1990s-2000s: </b>Following the real estate market crash, there was a drought of downtown skyscrapers that extended for two decades.</p></li>
+      <li value="2010" class="hidden"><p><b>2010s: </b>The first tall buildings of the new millennium on Dallas’ skyline were different from their predecessors: Both towers were residential and not built for office use.</p></li>
+    </ul>
+
+    <div id="nav" class="clearfix">
+      <button class="btn btn-previous btn-disabled" id="prevbtn" href="#"></button>
+      <!-- <i class="fa fa-angle-double-left" aria-hidden="true"></i> -->
+      <p>1 of 5</p>
+      <button class="btn btn-next" id="nextbtn" href="#"></button>
+      <!-- <i class="fa fa-angle-double-right" aria-hidden="true"></i> -->
+    </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
